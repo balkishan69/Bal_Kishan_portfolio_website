@@ -24,7 +24,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${inter.className} bg-[#050508] text-white antialiased`}>
+      <body className="bg-[#050508] text-white antialiased">
         {children}
       </body>
     </html>
