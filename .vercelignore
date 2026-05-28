@@ -1,0 +1,12 @@
+.git
+.gitignore
+node_modules
+npm-debug.log
+.env.local
+.next
+out
+*.md
+public/my_pic.png
+public/my_pic_processed.png
+public/my_pic_circular.png
+public/temp_*.png
