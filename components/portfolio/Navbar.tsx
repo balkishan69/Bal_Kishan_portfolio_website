@@ -79,7 +79,7 @@ export default function Navbar() {
             {/* CTA */}
             <div className="hidden md:flex items-center gap-3">
               <motion.a
-                href="https://drive.google.com/file/d/1KxxXH2XMHi4OjMyAs6UCqqKbvU6sdk0Q/view"
+                href="https://drive.google.com/file/d/1O0Dbu8meAAS-ZiaKAaRgAKl7t6nk2Axb/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(0,212,255,0.3)' }}
@@ -131,7 +131,7 @@ export default function Navbar() {
               ))}
               <div className="flex gap-3 pt-2">
                 <a
-                  href="https://drive.google.com/file/d/1KxxXH2XMHi4OjMyAs6UCqqKbvU6sdk0Q/view"
+                  href="https://drive.google.com/file/d/1O0Dbu8meAAS-ZiaKAaRgAKl7t6nk2Axb/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 text-center px-4 py-2 text-sm text-[#00d4ff] border border-[#00d4ff]/30 rounded-lg"
