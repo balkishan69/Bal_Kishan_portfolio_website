@@ -1,25 +1,6 @@
 'use client';
 
 import './globals.css';
-import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google';
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk',
-  display: 'swap',
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-jetbrains',
-  display: 'swap',
-});
 
 export default function RootLayout({
   children,
@@ -27,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} dark`}>
+    <html lang="en" className="dark">
       <head>
         <title>Bal Kishan — Full Stack Engineer & AI Systems Builder</title>
         <meta name="description" content="Full Stack Software Engineer specializing in MERN stack, AI systems, and high-performance applications. LeetCode Knight (1948 rating), competitive programmer, and builder of production-grade systems." />
