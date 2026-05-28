@@ -140,7 +140,7 @@ export default function Contact() {
               <span className="w-2.5 h-2.5 rounded-full bg-[#00ff88] animate-pulse flex-shrink-0" />
               <div>
                 <div className="text-sm font-medium text-white">Open to opportunities</div>
-                <div className="text-xs text-[#5a5a70]">Full-time roles & SDE internships — starting 2025</div>
+                <div className="text-xs text-[#5a5a70]">Full-time roles & internships — starting 2026</div>
               </div>
             </div>
           </motion.div>
