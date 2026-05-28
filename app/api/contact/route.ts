@@ -20,7 +20,7 @@ export async function POST(request: Request) {
   const resend = new Resend(resendApiKey);
 
   try {
-    const { data } = await resend.emails.send({
+    const result = await resend.emails.send({
       from: senderEmail,
       to: adminEmail,
       replyTo: email,
@@ -34,8 +34,14 @@ export async function POST(request: Request) {
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
 
-    console.log('Email send request accepted:', data.id);
-    return NextResponse.json({ success: true, emailId: data.id });
+    const emailId = result.data?.id;
+    console.log('Email send request accepted:', emailId);
+
+    if (!emailId) {
+      throw new Error('Resend did not return an email id.');
+    }
+
+    return NextResponse.json({ success: true, emailId });
   } catch (error) {
     console.error('Resend email failed:', error);
     return NextResponse.json({ error: 'Unable to send message at this time. Please try again later.' }, { status: 500 });
