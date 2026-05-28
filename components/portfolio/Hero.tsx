@@ -161,7 +161,7 @@ export default function Hero() {
                 <ExternalLink size={14} />
               </motion.a>
               <motion.a
-                href="https://drive.google.com/file/d/1KxxXH2XMHi4OjMyAs6UCqqKbvU6sdk0Q/view"
+                href="https://drive.google.com/file/d/1O0Dbu8meAAS-ZiaKAaRgAKl7t6nk2Axb/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
